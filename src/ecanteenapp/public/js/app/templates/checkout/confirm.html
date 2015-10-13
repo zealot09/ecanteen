@@ -1,0 +1,61 @@
+<div class="checkout-heading">Step 3: Confirm Order<a style="display: none;">Modify »</a>
+</div>
+<div class="checkout-content" style="display: none;">
+    <div class="checkout-product">
+        <table>
+            <thead>
+                <tr>
+                    <td class="name">Product Name</td>
+                    <td class="substitute">Substitute</td>
+                    <td class="quantity">Quantity</td>
+                    <td class="price">Unit Price</td>
+                    <td class="total">Total</td>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr class="other-amount first">
+                    <td></td>
+                    <td colspan="3"><b>Sub-Total:</b>
+                    </td>
+                    <td>
+                        <strong>${{subtotalPrice}}</strong>
+                    </td>
+                </tr>
+                <tr class="other-amount">
+                    <td></td>
+                    <td colspan="3"><b>Tax:</b>
+                    </td>
+                    <td>
+                        <strong>${{totalTax}}</strong>
+                    </td>
+                </tr>
+                <tr class="total-amount">
+                    <td></td>
+                    <td colspan="3"><b>Total:</b>
+                    </td>
+                    <td>
+                        <strong>${{totalPrice}} + ${{shipping}}</strong>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="payment">
+        <div class="buttons">
+            <div class="right">
+                <div class="warning" style="display:none;">Oops, an error occured. Please go to <a href="#">Stores Page</a> and retry!</div>
+                <br>
+                {{#equals id 1}}
+                <label for="">Limited Offer</label><br><br>
+                <a class="button js-share" style="background-color: #47639E;">Share on Facebook, get a gift!</a>
+                <br>
+                {{/equals}}
+                <br>
+                <input type="button" value="Confirm Order" id="button-confirm" class="js-continue button">
+            </div>
+        </div>
+
+    </div>
+</div>

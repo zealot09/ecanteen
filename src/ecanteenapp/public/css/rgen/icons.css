@@ -1,0 +1,336 @@
+@font-face {
+	font-family: 'rgenregular';
+	src: url('../../img/rgen/rgen/icons/rgen-webfont.eot');
+	src: url('../../img/rgen/rgen/icons/rgen-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../../img/rgen/rgen/icons/rgen-webfont.woff') format('woff'),
+		 url('../../img/rgen/rgen/icons/rgen-webfont.ttf') format('truetype'),
+		 url('../../img/rgen/rgen/icons/rgen-webfont.svg#rgenregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*	
+	COMMON ICONS
+	============================ 
+*/
+
+[class^="icon-"],
+[class*=" icon-"] {
+	display: inline-block;
+	font-size: 0px;
+	line-height: 0;
+	text-indent: -9999px;
+	vertical-align:middle;
+	text-decoration:none;
+	position:relative;
+	overflow:hidden;
+}
+.compare:before,
+.wish:before,
+.select:before,
+#header #cart .cart-arrow:before,
+.selected-language:before,
+.selected-currency:before,
+#twitter ul li:before,
+.read-review .wrt-on:before,
+.th-l .image-additional a:before,
+.product-info .image .zoom-text b:before,
+.product-filter .display b:before,
+.product-filter .display a:before,
+.footer-bt a:before,
+.fax-image:before,
+.email-image:before,
+.ph-image:before,
+.cart-bt:before,
+.jcarousel-prev:before,
+.jcarousel-next:before,
+.list-carousel .carousel-controls a:before,
+#slidshow-box .carousel-controls a:before,
+#header .button-search:before,
+#header #cart .heading a:before,
+.home-btn:before {
+	position: relative;
+	font-family: 'rgenregular';
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	font-size: inherit;
+	-webkit-font-smoothing: antialiased;
+	margin: auto;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	text-indent: 0;
+	text-transform: none;
+	}
+/*	
+	HEADER PART
+	============================ 
+*/
+.home-btn {
+	text-align: center;
+	}
+.home-btn:before {
+	font-size: 14px;
+	content: 'c';
+	top: 7px;
+	}
+.select:before,
+.selected-language:before,
+.selected-currency:before {
+	font-size: 16px;
+	content: 'h';
+	position: absolute;
+	width: 12px;
+	height: 5px;
+	right: 9px;
+	top: 13px;
+	overflow: hidden;
+	line-height: 0px;
+	}
+	
+/* Mini cart icon */
+#header #cart .heading a:before {
+	font-size: 16px;
+	content: 'a';
+	position: absolute;
+	left: 9px;
+	top: 7px;
+	}
+#header #cart .cart-arrow:before {
+	font-size: 32px;
+	content: 'i';
+	position: absolute;
+	right: 23px;
+	top: -14px;
+	overflow: hidden;
+	height: 14px;
+}
+
+/* Header search button icon */
+#header .button-search:before {
+	font-size: 13px;
+	content: 'b';
+	top: 9px;
+	}
+	
+/* Slide show arrows */
+#slidshow-box .carousel-controls .prev:before,
+#slidshow-box .carousel-controls .next:before {
+	content: 'e';
+	font-size: 16px;
+	top: 17px;
+	position:absolute;
+	left:17px;
+	}
+#slidshow-box .carousel-controls .prev:before {
+	content: 'd';
+	left:15px;
+	}
+
+/* Carousel arrows */
+.jcarousel-prev:before,
+.jcarousel-next:before,
+.list-carousel .carousel-controls .prev:before,
+.list-carousel .carousel-controls .next:before{
+	content: 'g';
+	font-size: 10px;
+	top: 5px;
+	position:absolute;
+	left:5px;
+	}
+.jcarousel-prev:before,
+.list-carousel .carousel-controls .prev:before {
+	content: 'f';
+	top: 4px;
+	left: 4px;
+	}
+.th-l .thumb-wrapper .carousel-controls a.next:before {
+	content: 'h';
+	}
+.th-l .thumb-wrapper .carousel-controls a.prev:before {
+	content: 'i';
+	}
+
+/* Cart button */
+.cart-bt:before {
+	font-size: 20px;
+	content: 'a';
+	top: 11px;
+	}
+.cart-bt:hover:before {
+	text-decoration: none;
+	}
+.product-info .cart .cart-bt:before {
+	font-size: 18px;
+	top: 15px;
+	}
+.compare:before {
+	font-size: 15px;
+	content: 'L';
+	top: 8px;
+}
+.wish:before {
+	font-size: 15px;
+	content: 'K';
+	top: 8px;
+}
+
+/* Footer icons */
+.fax-image:before,
+.email-image:before,
+.ph-image:before {
+	font-size: 20px;
+	content: 'p';
+	left: 5px;
+	position: absolute;
+	top: 8px;
+	width: 24px;
+	}
+.fax-image:before {
+	content: 'o';
+	}
+.email-image:before {
+	content: 'n';
+	}
+.footer-bt a:before {
+	font-size: 16px;
+	content: 'q';
+	top: 12px;
+	left: -1px;
+	position:absolute;
+	}
+.footer-bt a.facebook-icon:before {
+	content: 'q';
+	left:11px;
+	}
+.footer-bt a.twitter-icon:before {
+	content: 'r';
+	font-size: 15px;
+	top: 13px;
+	left:13px;
+	}
+.footer-bt a.youtube-icon:before {
+	content: 's';
+	font-size: 18px;
+	top: 10px;
+	left: 11px;
+	}
+.footer-bt a.google-icon:before {
+	content: 't';
+	font-size: 21px;
+	top: 9px;
+	left: 12px;
+	}
+.footer-bt a.mailto-icon:before {
+	content: 'n';
+	font-size: 19px;
+	top: 10px;
+	left: 10px;
+	}
+.footer-bt a.addthis-icon:before {
+	content: '+';
+	font-size: 28px;
+	font-weight: bold;
+	font-family: arial;
+	top: 6px;
+	left: 12px;
+	}
+.footer-bt a.flickr-icon:before {
+	content: 'E';
+	font-size: 20px;
+	top: 9px;
+	left: 10px;
+	}
+.footer-bt a.pintrest-icon:before {
+	content: 'F';
+	font-size: 21px;
+	top: 10px;
+	left: 10px;
+	}
+.footer-bt a.rss-icon:before {
+	content: 'G';
+	font-size: 17px;
+	top: 10px;
+	left: 12px;
+	}
+.footer-bt a.yahoo-icon:before {
+	content: 'H';
+	font-size: 23px;
+	top: 8px;
+	left: 8px;
+	}
+.footer-bt a.tumblr-icon:before {
+	content: 'I';
+	font-size: 16px;
+	top: 11px;
+	left: 13px;
+	}
+.footer-bt a.insta-icon:before {
+	content: 'J';
+	font-size: 22px;
+	top: 9px;
+	left: 9px;
+	}
+.footer-bt a.linkedin-icon:before {
+	content: 'x';
+	font-size: 19px;
+	top: 8px;
+	left: 11px;
+	}
+.footer-bt a.vimeo-icon:before {
+	content: 'y';
+	font-size: 19px;
+	top: 11px;
+	left: 10px;
+	}
+
+	
+/* Product list icons */
+.product-filter .display .list-bt:before,
+.product-filter .display .grid-bt:before {
+	content: 'k';
+	font-size: 18px;
+	top: 6px;
+	}
+.product-filter .display .list-bt:before {
+	content: 'l'; 
+	}
+
+/* Product page icons */
+.product-info .image .zoom-text b:before {
+	content: 'b';
+	font-size: 13px;
+	left: -1px;
+	}
+.th-l .image-additional .active a:before {
+	content: 'g';
+	position: absolute;
+	top: 50%;
+	right: -8px;
+	width: 8px;
+	overflow: hidden;
+	text-indent: -9px;
+	height: auto;
+	font-size: 20px;
+	margin-top: -10px;
+	height: 20px;
+	line-height: 20px;
+	}
+.read-review .wrt-on:before {
+	content: 'm';
+	font-size: 26px;
+	top: 0px;
+	}
+#twitter ul li:before {
+	content: 'v';
+	font-size: 38px;
+	top: -6px;
+	position: absolute;
+	left: 0px;
+	}
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+	.prd-block .cart-bt {
+		background-position:inherit;	
+	}
+}

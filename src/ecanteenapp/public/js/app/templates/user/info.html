@@ -1,0 +1,57 @@
+<div class="page-heading-wrp">
+    <h1 class="page-heading">
+        <strong>My Account Information</strong>
+    </h1>
+    <div class="breadcrumb" style="visibility: visible;">
+        <span></span><a href="#">Home</a>
+        <span>»</span><a href="#account">Account</a>
+        <span>»</span><a href="#basicinfo">Edit Information</a>
+    </div>
+</div>
+<form action="" method="post" enctype="multipart/form-data">
+
+    <div class="content box-form m0">
+
+        <h2 class="header-3">Your Personal Details</h2>
+        <table class="form">
+            <tbody>
+                <tr>
+                    <td>Name:
+                        <span class="required">*</span>
+                    </td>
+                    <td>
+                        <input type="text" name="name" value="{{name}}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>E-Mail:
+                    </td>
+                    <td>
+                        <input type="text" disabled name="email" value="{{email}}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Telephone:
+                        <span class="required">*</span>
+                    </td>
+                    <td>
+                        <input type="text" name="mobile" value="{{mobile}}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kredits:</td>
+                    <td>
+                        <input type="text" value="{{kredit}}" disabled>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="buttons">
+        <div class="left"><a href="#account" class="button dark-bt">Back</a>
+        </div>
+        <div class="right">
+            <input type="submit" value="Continue" class="button dark-bt">
+        </div>
+    </div>
+</form>

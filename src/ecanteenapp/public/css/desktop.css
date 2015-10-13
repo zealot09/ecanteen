@@ -1,0 +1,17 @@
+/* desktop.css */
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700&subset=latin,latin-ext);
+@import url("rgen/carousel.css");
+@import url("plugins/jquery.mCustomScrollbar.css");
+@import url("rgen/magnific-popup.css");
+@import url("plugins/nivo-slider.css");
+/*@import url("rgen/mob.css");
+@import url("rgen/tab.css");*/
+@import url("rgen/desk.css");
+@import url("rgen/icons.css");
+@import url("rgen/stylesheet.css");
+@import url("vendor/bootstrap-grid.css");
+@import url("rgen/store_home.css");
+@import url("rgen/theme5.css");
+@import url("plugins/backbone.modal.css");
+@import url("plugins/backbone.modal.theme.css");
+@import url("commonstyles.css");

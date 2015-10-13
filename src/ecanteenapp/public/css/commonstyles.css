@@ -1,0 +1,215 @@
+.search-unit {
+    position: relative;
+    height: 50px;
+    margin-bottom: 1em;
+    z-index: 15;
+    overflow:hidden;
+    margin-left: auto;
+    margin-right: auto;
+    width: 310px;
+}
+.search-unit .button-search {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    cursor: pointer;
+    -webkit-border-radius:30px;
+    -moz-border-radius: 30px;
+    -khtml-border-radius: 30px;
+    border-radius: 30px;
+    color: #333;
+    background-color:#81D0AC;
+    box-shadow:0px 0px 0px 5px rgba(109, 222, 226, 0.25);
+}
+.search-unit .button-search:before {
+    position: relative;
+    font-family:'rgenregular';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    font-size: inherit;
+    -webkit-font-smoothing: antialiased;
+    margin: auto;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    text-indent: 0;
+    text-transform: none;
+    font-size: 13px;
+    content:'b';
+    top: 9px;
+    color: #FFF;
+}
+.search-unit .search-box {
+    float: left;
+    position: relative;
+    height: 40px;
+    margin: 0 1em;
+    width: 430px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
+    background:#81D0AC;
+    overflow:hidden;
+}
+.search-unit input {
+    padding: 0 15px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: #FFF;
+    width: 388px;
+    height: 30px;
+    border: none;
+    -webkit-border-radius:20px;
+    -moz-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
+    box-shadow:none;
+}
+.search-unit .button-search {
+    box-shadow: 0px 0px 0px 5px rgba(229, 229, 218, 0.95);
+}
+.search-unit .search-box {
+    width: 250px;
+}
+.search-unit input {
+    width: 208px;
+}
+.search-unit:hover .button-search, .search-unit .button-search:hover {
+    box-shadow: 0px 0px 0px 5px rgba(129, 208, 172, 1);
+    color: #fff;
+}
+.prd-block .image img {
+    /*width: 150px;*/
+    height: 150px;
+}
+.prd-block {
+    height: 214px;
+}
+.prd-block .info {
+    background-color: #fff;
+    height: 90px;
+    width: 172px;
+}
+.prd-block .info-wrp ul, .product-list .prd-block .buy-option ul {
+    width: 100px;
+}
+.product-grid .prd-block {
+    width: 212px;
+    margin: 10px;
+}
+.cate-header .header-1 {
+    background: none;
+    border-bottom-color: rgba(87, 87, 84, 0.1) !important;
+    border-bottom: 7px double;
+    padding-bottom: 15px;
+}
+/*.content-body-wrapper {
+    background-color: #FCFCF7;
+}
+body {
+    background: #444;
+}*/
+ .more {
+    color: #81D0AC;
+    font-size: 14px;
+    line-height: 30px;
+    cursor:pointer;
+}
+.mini-cart-info {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.mini-cart-info .name {
+    max-width: 60px;
+}
+#header #cart .content {
+    transition: width 2s;
+    -webkit-transition: width 2s;
+    /* Safari */
+}
+.box-form1-wrapper .box-form {
+    min-height: 0;
+}
+.inactive {
+    opacity: 0.4;
+}
+#header .store-logo1 {
+    z-index: 0;
+}
+.breadcrumb a {
+    color: #D9814C !important;
+}
+.prd-block1 {
+    margin: 0 9px !important;
+}
+.prd-block2 .image img {
+    padding: 0;
+    width: 194px;
+    height: 194px;
+}
+.prd-block2 .nameText {
+    max-height: 50px;
+    overflow: hidden;
+}
+.bbm-wrapper {
+    overflow: auto;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.bbm-modal {
+    max-width: 890px;
+    border-radius: 0;
+    background-color: #F8F7EB;
+}
+.product-info .tabs-wrapper {
+    margin-bottom: 20px;
+}
+.product-info .image {
+    padding: 0;
+    width: 351px;
+    height: 351px;
+}
+.product-info .image img {
+    width: 330px;
+    margin-top: 10px;
+}
+.prd-layout1 > .right {
+    margin-bottom: 0;
+    width: 450px;
+}
+.prd-layout1 > .left {
+    margin-bottom: 0;
+}
+.bbm-modal .product-info.prd-layout1 {
+    padding-right: 35px;
+}
+.product-info .option b {
+    display: inline;
+}
+.bbm-modal__bottombar {
+    margin-top: 0;
+    border-top: none;
+}
+#header.logo-in-header #search {
+    position: fixed;
+    right: 5%;
+}
+#header #cart {
+    position: fixed;
+    right: 11%;
+}
+td.substitute {
+    vertical-align: middle !important;
+}

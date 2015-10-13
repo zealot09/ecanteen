@@ -1,0 +1,17 @@
+<td class="image">
+    <a href="">
+        <img src="http://kantwait.com{{image}}" alt="iMac" title="iMac">
+    </a>
+</td>
+<td class="name">
+    <a>{{name}}</a>
+</td>
+<td class="total">
+	{{#if onSale}}
+    <input type="text" name="count" size="2" class="qty-input" value="{{count}}"><strong> x ${{onSalePrice}}</strong>
+    {{else}}
+    <input type="text" name="count" size="2" class="qty-input" value="{{count}}"><strong> x ${{price}}</strong>
+    {{/if}}
+
+    <a class="remove-link" title="Remove">Remove</a>
+</td>

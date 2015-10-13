@@ -1,0 +1,78 @@
+<div class="product-info prd-layout1">
+    <div class="tabs-wrapper review-in">
+        <!--DESCRIPTION TABS -->
+        <div id="tabs" class="htabs">
+            <a href="#tab-description" class="selected" style="display: inline;">Description</a>
+            <!--             <a href="#prd-extb5" class="" style="display: inline;">New tab</a>
+            <a href="#tab-review" style="display: inline;" class="">Reviews (0)</a>
+            <a href="#tab-write-review" style="display: inline;" class="">Write a review</a> -->
+        </div>
+    </div>
+    <div class="th-b left prdimage-wrapper">
+        <div class="image-wrp">
+            <div class="image">
+                <img src="http://kantwait.com{{image_medium}}" id="main-image">
+            </div>
+        </div>
+    </div>
+    <div class="right prdoptions-wrapper">
+        <div class="l">
+            <div class="price-info">
+                <div class="price-wrp">
+                    {{#if onSale}}
+                    <span class="price-old">$ {{ price }}</span>
+                    <span class="price-new">$ {{ onSalePrice }}</span>
+                    {{else}}
+                    <span class="price-new">$ {{ price }}</span>
+                    {{/if}}
+                </div>
+            </div>
+            <ul class="description">
+                <li>
+                    <span>Product Name:</span>{{name}}</li>
+                <li>
+                    <span>Availability:</span>In Stock</li>
+            </ul>
+
+<!--             <div class="options">
+                <br />
+                <div id="option-226" class="option">
+                    <b><span class="required">*</span> Select: </b>
+                    <span class="select">
+                        <select name="option[226]" class="select-menu">
+                            <option value="">-- Please Select --</option>
+                            <option value="15">Red</option>
+                            <option value="16">Blue</option>
+                        </select>
+                    </span>
+                </div>
+            </div> -->
+            <div class="cart">
+                <span class="qty">
+                    <form action="">
+                        <strong>Quantity:</strong>
+                        <input type="text" name="count" size="2" class="qty-input" value="1">
+                    </form>
+                    <a title="Add to Cart" id="button-cart" class="cart-bt js-add">Add to Cart</a>
+                    <!--                     <span class="cart-option">
+                        <a onclick="addToWishList('30');">Add to Wish List</a>
+                        <a onclick="addToCompare('30');">Add to Compare</a>
+                    </span> -->
+                </span>
+            </div>
+            <div class="share">
+                <div class="addthis_default_style">
+                    <a class="addthis_button_facebook"></a>
+                    <a class="addthis_button_twitter"></a>
+                    <a class="addthis_button_email"></a>
+                    <a class="addthis_button_print"></a> <a class="addthis_button_compact">Share</a> 
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<div class="bbm-modal__bottombar">
+    <a href="#" class="button js-done">Done</a>
+</div>

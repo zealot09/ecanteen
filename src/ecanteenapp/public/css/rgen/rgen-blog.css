@@ -1,0 +1,449 @@
+.blogSearch .readmore,
+.articleContent .readMore span a,
+#blogArticle .articleHeader h1, 
+#blogArticle .articleHeader h1 a, 
+#blogCatArticles .articleHeader h3, 
+#blogCatArticles .articleHeader h3 a,
+.articleHeader span a {
+	color: #944737;
+	}
+
+.articleContent .readMore span a:hover,
+.articleHeader span a:hover,
+#blogArticle .articleHeader h1 a:hover, 
+#blogCatArticles .articleHeader h3 a:hover {
+	color: #333;
+	}
+
+#articleComments {
+	border: none;
+	margin-bottom: 20px;
+	background: transparent;
+	padding: inherit;
+	}
+
+#articleComments #commentRespond {
+	padding: inherit;
+	padding: 30px;
+	}
+
+#commentRespond input[type="text"], 
+#commentRespond textarea {
+	padding: 3px 8px;
+	margin-left: 0px;
+	margin-right: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+
+#articleComments h4 {
+	padding-bottom: 12px;
+	margin-bottom: 12px;
+	font-size: 13px;
+	margin-bottom: 15px;
+	}
+
+#articleComments > h4 {
+	padding-bottom: inherit;
+	margin-bottom: 18px;
+	font-size: 17px;
+	}
+
+.commentList .odd {
+	background-color: transparent;
+	}
+	
+#comments .commentList {
+	margin: 0;
+	}
+
+.commentList li {
+	border: none;
+	padding: 15px 15px 15px 90px;
+	}
+
+.commentList li .avatar {
+	left: 15px;
+	top: 15px;
+	}
+
+#articleComments .commentList #commentRespond {
+	padding: 15px;
+	border: none;
+	}
+
+#commentRespond #cancelCommentReply {
+	margin-top: -40px;
+	}
+
+.commentList li .name, .commentList li .name a {
+	color: inherit;
+	}
+
+#commentRespond .right {
+	padding-right: 10px;
+	padding-bottom: 0px;
+	}
+
+#blogArticle .articleHeader h1, 
+#blogArticle .articleHeader h1 a, 
+#blogCatArticles .articleHeader h3, 
+#blogCatArticles .articleHeader h3 a {
+	font-size: 17px;
+	font-weight: 900;
+	}
+
+.articleHeader span a {
+	font-style: normal;
+	}
+
+.articleHeader {
+	padding-bottom: 15px;
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+	margin-top: 0px;
+	}
+
+#blogCatArticles .imageFeatured {
+	border: none;
+	padding: 0px;
+	margin: 0px;
+	}
+#blogCategory .imageFeatured,
+.imageFeaturedLink {
+	background:#fff;
+	padding:15px;
+	-webkit-box-shadow:0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+	box-shadow:0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+	margin: 1px 20px 20px 2px;
+	border: none;
+	width: auto\9; height: auto !important; max-width: 100%;
+	float: left;
+}
+
+.articleContent .readMore {
+	margin-top: 0;
+	padding: 10px;
+	text-align: right;
+	background: rgba(0,0,0,0.02);
+	margin-bottom: 30px;
+	}
+
+.articleContent img {
+	width: auto\9; height: auto !important; max-width: 100%;
+	}
+
+.articleContent .readMore span {
+	margin-left: 20px;
+	font-weight: bold;
+	}
+
+.livemarks a {
+	margin-top: -57px;
+	}
+
+.articleBottom {
+	margin-bottom: 40px;
+	}
+
+.articleBottom .addthis_toolbox {
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+	border-top: 1px solid rgba(0,0,0,0.05);
+	padding: 10px 0;
+	margin-bottom: 30px;
+	}
+
+.articleBottom ul, #blogCategory ul {
+	margin: 0;
+	}
+
+.articleBottom #articleRelated {
+	margin-bottom: 30px;
+	}
+
+#blogCategory {
+	padding-bottom: 30px;
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+	}
+
+/*##################################################  ARTICLE'S IN COLUMNS  ###########*/
+
+.blogCol3 .articleHeader h3, .blogCol3 .articleHeader h3 a,
+.blogCol4 .articleHeader h3, .blogCol4 .articleHeader h3 a {
+	font-size: 13px !important;
+	}
+.blogCol3 .imageFeaturedLink,
+.blogCol4 .imageFeaturedLink {
+	margin: 0 auto 15px auto;
+	float: none;
+	text-align: center;
+	}
+.blogCol3 .articleContent .readMore,
+.blogCol4 .articleContent .readMore {
+	text-align: left;
+	}
+.blogCol3 .articleContent .readMore span a,
+.blogCol4 .articleContent .readMore span a {
+	font-size: 11px;
+	}
+
+.blogCol4 .articleContent .readMore span {
+	margin-left: 0;
+	display: block;
+	}
+.blogCol3 .articleContent .readMore span {
+	margin: 0 3px;
+	display: inline-block;
+	}
+
+.blogCol4 .blockClear,
+.blogCol3 .blockClear {
+	padding-bottom: 15px;
+	display: block;
+	}
+.blogCol2 .imageFeaturedLink {
+	margin: 0 auto 15px auto;
+	float: none;
+	text-align: center;
+	}
+/*##################################################  RELATED PRODUCTS  ###########*/
+
+#content .relProduct {
+	width: 156px !important;
+}
+
+#content #column-left + .content-body .relProduct,
+#content #column-right + .content-body .relProduct {
+	width: 144px !important;
+}
+
+#productRelated .relProduct {
+	margin: 0 -2px 1px 0;
+	background: #fff;
+	padding: 15px 15px 0 15px;
+	text-align: center;
+	min-height: 340px;
+	display: inline-block;
+	vertical-align: top;
+	}
+
+#productRelated .relProduct img {
+	width: auto\9; height: auto !important; max-width: 100%;
+	}
+
+#productRelated .relProduct .rating {
+	display: none;
+	}
+
+#productRelated .relProduct .image {
+	margin-bottom: 10px;
+	}
+
+#productRelated .relProduct .name a {
+	font-size: 11px;
+	font-weight: bold;
+	}
+
+#productRelated .relProduct .price {
+	margin: 10px 0;
+	padding: 5px 0;
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+	border-top: 1px solid rgba(0,0,0,0.05);
+	font-weight: bold;
+	}
+
+#productRelated .relProduct .price .price-new {
+	vertical-align: middle;
+	}
+#productRelated .relProduct .price .price-old {
+	font-size: 11px;
+	color: rgba(0,0,0,0.4);
+	text-decoration: line-through;
+	font-weight: normal;
+	}
+
+#productRelated .relProduct .cart .button {
+	
+	}
+
+/*##################################################  BLOG MODULES  ###########*/
+
+.boxPlain .box-heading {
+	padding: inherit;
+	border: none;
+	border-bottom: 1px solid #e0e0e0;
+	padding-bottom: 14px;
+	margin-bottom: 14px;
+	}
+
+.blogModule .box-heading {
+	color: #493c39;
+	font-size: 13px;
+	font-weight: 900;
+	line-height: 1;
+	}
+
+.boxPlain .box-content {
+	padding: inherit;
+	border: none;
+	}
+
+.blogCategories li,
+.blogArchives li {
+	background: none;
+	}
+
+.blogCategories ul,
+.blogArchives ul {
+	line-height: inherit;
+	}
+
+.blogArchives .blogMonth > li {
+	padding: 0;
+	margin-bottom: 1px;
+	background: none;
+	}
+
+.blogArchives > ul > li > ul {
+	margin: 11px 0 -7px 0;
+	}
+
+.blogModule li {
+	padding: 3px 0 15px 1px;
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+	}
+
+.blogArchives > ul > li ul > li {
+	border-bottom: none;
+	}
+
+.blogModule .recentComments .avatar img,
+.blogModule .image img {
+	padding: 5px;
+	border: none;
+	background: #fff;
+	-webkit-box-shadow:0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+	box-shadow:0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+	}
+
+.blogModule .title {
+	font-size: 12px;
+	line-height: 1.2;
+	font-weight: bold;
+	}
+
+.recentComments i,
+.recentComments a:nth-child(2) {
+	font-size: 11px;
+	}
+
+.tags-update .tags a,
+.blogTags .box-content a {
+	padding: 2px 7px 3px 7px;
+	background-color: #fff;
+	font-size: 11px !important;
+	display: inline-block;
+	margin-bottom: 5px;
+	border-radius: 4px;
+	font-style: normal;
+	}
+
+.tags-update {
+	text-align: left;
+	padding: 15px;
+	background: rgba(0,0,0,0.02);
+	}
+
+.tags-update b {
+	display: block;
+	margin-bottom: 5px;
+	}
+
+/*##################################################  PRODUCT PAGE ARTICLE TAB  ###########*/
+
+#tab-related-article .blogTitle {
+	font-size: 13px;
+	font-weight: bold;
+	margin-bottom: 8px;
+	}
+
+#tab-related-article .info {
+	font-style: normal;
+	display: block;
+	margin-top: -2px;
+	}
+
+#tab-related-article li {
+	font-size: 11px;
+	line-height: 1.4;
+	}
+
+#tab-related-article li {
+	width: 48%;
+	min-height: 130px;
+	}
+
+.left.tabs-wrapper #tab-related-article li {
+	float: none;
+	width: auto;
+	min-height: inherit;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+	}
+
+#tab-related-article ul {
+	overflow: auto;
+	}
+
+.blogSearch .compact .title {
+	font-size: 13px;
+	font-weight: bold;
+	}
+
+.blogSearch .compact .info {
+	font-size: 11px;
+	font-style: normal;
+	}
+
+.blogSearch .readmore {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 11px;
+	display: block;
+	}
+
+/*##################################################  RESPONSIVE CSS  ###########*/
+
+@media only screen and (min-width: 200px) and (max-width: 767px){
+	#blogCategory .imageFeatured, 
+	.articleContent .imageFeaturedLink,
+	#blogCatArticles .imageFeatured {
+		float: none;
+		margin: 0px;
+	}
+	.articleContent .imageFeaturedLink {
+		display: block;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+	.blogCol4 .articleCat,
+	.blogCol3 .articleCat,
+	.blogCol2 .articleCat {
+		float: none;
+		width: auto;
+		height: auto !important;
+	}
+
+	#comments .replyComment {
+		margin-left: -90px;
+	}
+
+	#tab-related-article li {
+		float: none;
+		width: auto;
+		min-height: inherit;
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid rgba(0,0,0,0.05);
+	}
+}

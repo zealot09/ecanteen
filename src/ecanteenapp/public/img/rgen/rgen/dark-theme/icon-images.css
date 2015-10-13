@@ -1,0 +1,16 @@
+.prd-block2 .buy-option .prdbt,
+.product-info .qty .qty-input, .read-review .wrt-off, #footer .contact-info .ph-image, #footer .contact-info .fax-image, #footer .contact-info .email-image, a.cart-bt, .product-info .cart a.cart-bt, .product-info .cart, .footer-bt a, .lrg-stars, .sml-stars, .jspDragTop, .jspDragBottom, .list-bt, .grid-bt, .jcarousel-prev.jcarousel-prev-disabled, .jcarousel-prev.jcarousel-prev-disabled:hover, .jcarousel-next.jcarousel-next-disabled, .jcarousel-next.jcarousel-next-disabled:hover, #header #cart .cart-arrow, .offer-tag, .column .special-prd .box-heading, .product-info .image-additional .active a, .product-info .image .zoom-text b, .read-review .wrt-on, #twitter ul li, .product-info .qty .qty-input, #header .button-search, .search-close, .next, .jcarousel-next, .prev, .jcarousel-prev, .home-btn,
+.th-l .thumb-wrapper .prev,
+.th-l .thumb-wrapper .next {
+	background-image: url(sprites-darktheme.png);
+}
+#header #cart .heading a {
+	background-image: url(cart.png);
+}
+.prd-block1 a.cart-bt {
+	background-image: url(cartbt.png);
+}
+.prd-block1 a.cart-bt:hover {
+	background-image: url(cartbt_hover.png);
+	background-position: center center;
+}

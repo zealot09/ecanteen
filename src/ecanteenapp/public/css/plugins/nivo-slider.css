@@ -1,0 +1,462 @@
+/*
+ * jQuery Nivo Slider v3.1
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+ 
+/* The Nivo Slider styles */
+.slideshow {
+	background: url(../../img/rgen/rgen/ajax-loader.gif) no-repeat center center #000;
+}
+
+.nivoSlider {
+	position:relative;
+	width:100%;
+	height:auto;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: top center;
+	margin: auto;
+	z-index: 1;
+}
+.slider-wrapper { position:relative; overflow: hidden; }
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	max-width: none;
+	display: none;
+}
+.nivo-main-image {
+	display: block !important;
+	position: relative !important; 
+	width: 100% !important;
+}
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+	top:0;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+	overflow:hidden;
+}
+.nivo-box img { display:block; }
+
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	z-index:8;
+	display: none;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	display:block;
+	width:30px;
+	height:30px;
+	background:url('../../img/rgen/arrows.png') no-repeat;
+	text-indent:-9999px;
+	border:0;
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+}
+.slideshow a.nivo-nextNav {
+	background-position:-30px 0;
+	right:15px;
+}
+.slideshow a.nivo-prevNav {
+	left:15px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+	position: absolute;
+	left: 13px;
+	bottom: 13px;
+	z-index: 99;
+}
+.slideshow .nivo-controlNav a {
+	vertical-align: top;
+	display: block;
+	width:7px; height:7px;
+	border-radius:7px;
+	text-indent:-9999px;
+	margin-right:9px;
+	float:left;
+	box-shadow:0px 0px 0px 2px rgba(109, 222, 226, 1);
+	border:2px solid rgba(255, 255, 255, 0);
+	}
+.slideshow .nivo-controlNav a:hover {
+	text-decoration:none;
+	}
+.slideshow .nivo-controlNav a.active {
+	width:7px; height:7px;
+	border:2px solid #302323;
+	background:#fff;
+	}
+@media only screen and (min-width: 980px) and (max-width: 1025px) {
+	.full-slideshow .slideshow a.nivo-nextNav {	right:50px; }
+	.full-slideshow .slideshow a.nivo-prevNav {	left:50px; }
+	.nivo-directionNav a { top:43%; }
+}
+/* CAPTION POSITION */
+#lb { bottom: 50px; margin-bottom: auto !important; }
+#lt { top: 50px; text-align: left; }
+#ml { bottom: 50%; text-align: left; }
+
+#ct { top: 50px; text-align: center; }
+#cc { bottom: 50%; text-align: center; }
+#cb { bottom: 50px; text-align: center; margin-bottom: auto !important; }
+
+#rt { top: 50px; text-align: right; }
+#rb { bottom: 50px; text-align: right; margin-bottom: auto !important; }
+#mr { bottom: 50%; text-align: right; }
+
+.cap-data, .cap-hd, .cap-link {
+	position: relative;
+	margin: 0px;
+	margin-bottom: 1px;
+	display: inline-block;
+	opacity: 0;
+	left: -50px;
+}
+.nivo-caption {
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	width: 940px;
+	left: 50%;
+	margin-left: -470px;
+	background-color: transparent;
+	padding:1px 0px;
+}
+.beside-slideshow .nivo-caption {
+	width: 680px;
+	margin-left: 0px;
+	left: 0px;
+}
+.nivo-caption img {
+	position: relative;
+	display: inline-block;
+}
+
+/* CAPTION 1 */
+.cap1 .nivo-caption .cap-hd {
+	background-color: rgba(92,187,190,0.8);
+	padding: 10px 20px;
+	color: #fff;
+	font-size: 24px;
+}
+.cap1 .nivo-caption .cap-data {
+	padding: 20px;
+	background-color: rgba(255,255,255,0.8);
+	color: #517273;
+	font-size: 16px;
+	min-width: 300px;
+	max-width: 600px;
+}
+.cap1 .nivo-caption .cap-link {
+	background-color: #493c39;
+	padding: 6px 20px 8px 20px;
+	font-size: 16px;
+	color: #fff;
+	line-height: 1;
+}
+/* CAPTION 2 */
+.cap2 .nivo-caption .cap-hd {
+	font-weight: 900;
+	padding: 0;
+	color: #fff;
+	font-size: 50px;
+	text-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+	filter: dropshadow(color=rgba(0,0,0,0.5), offx=0, offy=1);
+	margin-bottom: 10px;
+}
+.cap2 .nivo-caption .cap-data {
+	padding: 20px 0 24px 0;
+	color: #fff;
+	font-size: 30px;
+	text-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+	filter: dropshadow(color=rgba(0,0,0,0.5), offx=0, offy=1);
+	line-height: 1.2;
+	border-bottom: 5px double #fff;
+	border-top: 5px double #fff;
+}
+.cap2 .nivo-caption .cap-link {
+	font-weight: 700;
+	font-size: 16px;
+	padding: 8px 20px; 
+	border: 3px double #fff;
+	background-color: rgba(255,255,255,0.8);
+	color: #333;
+	margin-top: 15px;
+}
+.cap2 .nivo-caption .cap-link:hover {
+	border-color: #333;
+	background-color: #333;
+	color: #fff;
+	text-decoration: none;
+}
+
+/* CAPTION 3 */
+.cap3 .nivo-caption > div {
+	background-color: rgba(101,83,79, 0.8);
+	padding: 30px 40px;
+	min-width: 250px;
+	max-width: 400px;
+	left: 40px;
+	position: relative;
+	opacity: 0;
+	display: inline-block;
+}
+.cap3 #cb > div,
+.cap3 #cc > div,
+.cap3 #ct > div { margin-left: auto; margin-right: auto; }
+.cap3 #mr > div,
+.cap3 #rb > div,
+.cap3 #rt > div { text-align: left; }
+.cap3 .nivo-caption .cap-hd {
+	font-weight: 900;
+	padding: 0;
+	color: #fff;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+.cap3 .nivo-caption .cap-data {
+	padding: 10px 0 14px 0;
+	color: #fff;
+	font-size: 20px;
+	line-height: 1.2;
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+	border-top: 1px solid rgba(255,255,255,0.3);
+}
+.cap3 .nivo-caption .cap-link {
+	font-weight: 700;
+	font-size: 13px;
+	padding: 8px 20px;
+	background-color: rgba(255,255,255,0.8);
+	color: #333;
+	margin-top: 15px;
+	border-radius: 20px;
+	border: 2px solid transparent; 
+}
+.cap3 .nivo-caption .cap-link:hover {
+	background-color: #333;
+	color: #fff;
+	border: 2px solid #fff;
+	text-decoration: none;
+}
+
+/* CAPTION 4 */
+.cap4 #lb > div,
+.cap4 #lt > div,
+.cap4 #ml > div,
+.cap4 #rt > div,
+.cap4 #rb > div,
+.cap4 #mr > div { text-align: center; }
+.cap4 .nivo-caption {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.cap4 .nivo-caption .cap-hd {
+	background-color: rgba(0,0,0,0.5);
+	font-size: 50px;
+	display: block;
+	color: #fff;
+	padding: 20px 0;
+}
+.cap4 .nivo-caption .cap-data {
+	color: #fff;
+	display: block;
+	font-size: 20px;
+	padding: 0 100px;
+	text-align: center;
+}
+.cap4 .nivo-caption .cap-link {
+	padding: 7px 20px 11px 20px;
+	border-radius: 30px;
+	background: rgba(0,0,0,0.8);
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+}
+.cap4 .nivo-caption .cap-link:hover {
+	-webkit-box-shadow: 0px 0px 0px 6px rgba(255, 255, 255, 0.5);
+	box-shadow: 0px 0px 0px 6px rgba(255, 255, 255, 0.5);
+}
+
+/* CAPTION 5 */
+.cap5 .nivo-caption > div {
+	padding: 30px 40px;
+	min-width: 250px;
+	max-width: 400px;
+	left: 40px;
+	position: relative;
+	opacity: 0;
+	display: inline-block;
+	border: 7px double #fff;
+}
+.cap5 #cb > div,
+.cap5 #cc > div,
+.cap5 #ct > div { margin-left: auto; margin-right: auto; }
+.cap5 #mr > div,
+.cap5 #rb > div,
+.cap5 #rt > div { text-align: left; }
+.cap5 .nivo-caption .cap-hd {
+	font-weight: 900;
+	padding: 0;
+	color: #fff;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+.cap5 .nivo-caption .cap-data {
+	padding: 10px 0 14px 0;
+	color: #fff;
+	font-size: 20px;
+	line-height: 1.2;
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+	border-top: 1px solid rgba(255,255,255,0.3);
+}
+.cap5 .nivo-caption .cap-link {
+	font-weight: 700;
+	font-size: 13px;
+	padding: 8px 20px;
+	background-color: rgba(255,255,255,0.8);
+	color: #333;
+	margin-top: 15px;
+	border-radius: 20px;
+	border: 2px solid transparent; 
+}
+.cap5 .nivo-caption .cap-link:hover {
+	background-color: #333;
+	color: #fff;
+	border: 2px solid #fff;
+	text-decoration: none;
+}
+
+/* CAPTION 6 */
+.cap6 .nivo-caption > div {
+	left: 40px;
+	position: relative;
+	opacity: 0;
+}
+.cap6 .nivo-caption .cap-hd {
+	font-weight: 900;
+	padding: 0;
+	color: #fff;
+	font-size: 50px;
+	margin-bottom: 0px;
+}
+.cap6 .nivo-caption .cap-data {
+	padding: 10px 0 14px 0;
+	color: #fff;
+	font-size: 20px;
+	line-height: 1.2;
+}
+.cap6 .nivo-caption .cap-link {
+	font-weight: 700;
+	font-size: 20px;
+	padding: 8px 20px 10px 20px;
+	background-color: rgba(255,255,255,0.8);
+	color: #333;
+	margin-top: 15px;
+	border-radius: 8px;
+	border: 2px solid transparent; 
+}
+.cap6 .nivo-caption .cap-link:hover {
+	background-color: #333;
+	color: #fff;
+	border: 2px solid #fff;
+	text-decoration: none;
+}
+
+
+/* ARROWS FOR FULL WIDH SLIDESHOW */
+
+.wf-full-slideshow .nivo-directionNav,
+.w-full-slideshow .nivo-directionNav {
+	position: relative;
+	z-index: 99999;
+	margin: auto;
+}
+.wf-full-slideshow .nivo-directionNav a,
+.w-full-slideshow .nivo-directionNav a {
+	background: none;
+	background-color: rgba(255,255,255,0.6);
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	height: 50px;
+	width: 50px;
+	z-index: 999;
+	font-size: 0px;
+	line-height: 0px;
+	text-indent: -999px;
+	text-decoration: none;
+	box-shadow: 0px 0px 0px 10px rgba(0, 0, 0, 0.25);
+	top: auto;
+}
+.wf-full-slideshow .nivo-directionNav a:before,
+.w-full-slideshow .nivo-directionNav a:before {
+	font-family: 'rgenregular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    color: rgba(0,0,0,0.6);
+    position: absolute;
+    text-indent: 0px;
+    top: 50%; left: 1px;
+	height: 16px;
+	line-height: 1;
+	width: 100%;
+	text-align: center;
+	margin-top: -8px;
+}
+.wf-full-slideshow .nivo-directionNav .nivo-nextNav,
+.w-full-slideshow .nivo-directionNav .nivo-nextNav { right: 30px; }
+.wf-full-slideshow .nivo-directionNav .nivo-prevNav,
+.w-full-slideshow .nivo-directionNav .nivo-prevNav { left: 30px; }
+.wf-full-slideshow .nivo-directionNav .nivo-nextNav:before,
+.w-full-slideshow .nivo-directionNav .nivo-nextNav:before { content: 'g';  }
+.wf-full-slideshow .nivo-directionNav .nivo-prevNav:before,
+.w-full-slideshow .nivo-directionNav .nivo-prevNav:before { content: 'f'; left: -1px; }
+
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+	.wf-full-slideshow .nivo-directionNav a,
+	.w-full-slideshow .nivo-directionNav a {
+		-webkit-border-radius: 30px;
+		border-radius: 30px;
+		height: 30px;
+		width: 30px;
+		box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.25);
+	}
+	.wf-full-slideshow .nivo-caption,
+	.w-full-slideshow .nivo-caption {
+		display: none !important;
+	}
+}

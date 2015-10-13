@@ -1,0 +1,26 @@
+<div class="order-list">
+    <div class="order-id">
+        <b>Order ID:</b> #{{id}}
+        <span class="order-status"><b>Status:</b> {{status}}</span>
+    </div>
+
+    <div class="order-content">
+        <div>
+            <b>Date Ordered:</b> {{orderTime}}
+            <br>
+            <b>Time Delivered:</b> {{userPickTime}}
+            <br>
+            <b>Products:</b> {{items.length}}
+        </div>
+        <div>
+            <b>Store:</b> {{store}}
+            <br>
+            <b>Delivered To:</b> {{location}}
+            <br>
+            <b>Total:</b> ${{totalPrice}}</div>
+        <div class="order-info">
+            <a href="" class="sml-button js-detail">View</a>
+            <!-- <a href="" class="sml-button dark-bt">Reorder</a> -->
+        </div>
+    </div>
+</div>

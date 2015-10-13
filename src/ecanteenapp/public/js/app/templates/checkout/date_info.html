@@ -1,0 +1,12 @@
+{{#each rides}}
+  <h4 style="margin-top: 0.5em;">{{date}}</h4>
+  {{#each rideList}}
+	<div>
+		<span style="float: left;line-height: 26px;margin-bottom: 1em;">Order within {{orderLeftTime}} to get it: {{arriveAbsTime}}.</span>
+		<a href="" class="button dark-bt js-choose" style="float: right;" offset="{{../offset}}" arriveTime="{{arriveAbsTime}}" ride="{{rideId}}">Choose</a>
+		<div class="clearfix hr"></div>
+	</div>
+  {{/each}}
+{{else}}
+  <p class="empty">No Date Available -- To Many Orders already, please try earlier next time</p>
+{{/each}}

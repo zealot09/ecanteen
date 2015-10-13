@@ -1,0 +1,114 @@
+<div class="content-body register">
+    <div class="page-heading-wrp">
+        <h1 class="page-heading">
+            <strong>Register Account</strong>
+        </h1>
+        <div class="breadcrumb" style="visibility: visible;">
+            <span></span><a href="">Home</a>
+            <span>»</span><a href="">Account</a>
+            <span>»</span><a href="">Register</a>
+        </div>
+    </div>
+    <p>If you already have an account with us, please login at the <a href="#login">login page</a>.</p>
+    <form action="" method="post" enctype="multipart/form-data">
+        <div class="box-form">
+            <h2 class="header-3">Your Personal Details</h2>
+            <div class="content">
+                <table class="form">
+                    <tbody>
+                        <tr>
+                            <td>Username:
+                                <span class="required">*</span>
+                            </td>
+                            <td>
+                                <input type="text" name="name" value="">
+                            </td>
+                            <span class="error" id="usernameError" style="display:none;">Please enter a valid username!</span>
+                        </tr>
+                        <tr>
+                            <td>E-Mail:
+                                <span class="required">*</span>
+                            </td>
+                            <td>
+                                <input type="text" name="email" value="">
+                                <span class="error" id="emailError" style="display:none;">Please enter a valid email address!</span>
+                                <span class="error" id="emailDupError" style="display:none;">This email is in use!</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Telephone:
+                                <span class="required">*</span>
+                            </td>
+                            <td>
+                                <input type="text" name="mobile" value="">
+                                <span class="error" id="telephoneError" style="display:none;">Please enter a valid phone number!</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="box-form">
+            <h2 class="header-3">Your Password</h2>
+            <div class="content">
+                <table class="form">
+                    <tbody>
+                        <tr>
+                            <td>Password:
+                                <span class="required">*</span>
+                            </td>
+                            <td>
+                                <input type="password" name="password" value="">
+                                <span class="error" id="passwordError" style="display:none;">Please enter a valid password!</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Password Confirm:
+                                <span class="required">*</span>
+                            </td>
+                            <td>
+                                <input type="password" name="confirm" value="">
+                                <span class="error" id="passwordConfirmError" style="display:none;">Password must match!</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="box-form">
+            <h2 class="header-3">Newsletter</h2>
+            <div class="content">
+                <table class="form">
+                    <tbody>
+                        <tr>
+                            <td>Subscribe:</td>
+                            <td>
+                                <input type="radio" name="newsletter" value="1">Yes
+                                <input type="radio" name="newsletter" value="0" checked="checked">No</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="buttons">
+            <table class="form">
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <span class="error" id="agreementError" style="display:none;">You must agree to the Privacy Policy!</span>
+                            <input type="checkbox" name="agree" value="1">I have read and agree to the <a class="colorbox cboxElement" href="#privacy" alt="Privacy Policy"><b>Privacy Policy</b></a> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Continue" class="js-continue button dark-bt">
+                            &nbsp;&nbsp;<span>Please check your email!</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+</div>

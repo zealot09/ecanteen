@@ -1,0 +1,129 @@
+<div class="page-heading-wrp">
+    <h1 class="page-heading">
+        <strong>Order Information</strong>
+    </h1>
+    <div class="breadcrumb" style="visibility: visible;">
+        <span></span><a href="#">Home</a>
+        <span>»</span><a href="#account">Account</a>
+        <span>»</span><a href="#orderHistory">Order History</a>
+        <span>»</span><a>Order Information</a>
+    </div>
+</div>
+<table class="list">
+    <thead>
+        <tr>
+            <td class="left" colspan="2">Order Details</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="left" style="width: 50%;">	<b>Order ID:</b> #{{id}}
+                <br>
+                <b>Date Ordered:</b> {{orderTime}}</td>
+            <td class="left" style="width: 50%;">	<b>Payment Method:</b> {{paymentMethod}}
+                <br>
+                <b>Delivery Fee:</b> ${{deliverFee}}</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
+<table class="list">
+    <thead>
+        <tr>
+            <td class="left">Shipping Address</td>
+            <td class="left"></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="left">{{location}}</td>
+            <td class="left"></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
+
+
+<table class="list">
+    <thead>
+        <tr>
+            <td class="left">Product Name</td>
+            <td class="left">Model</td>
+            <td class="right">Quantity</td>
+            <td class="right">Unit Price</td>
+            <td class="right">Note</td>
+            <td style="width: 1px;"></td>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each items}}
+        <tr>
+            <td class="left">
+                <strong>{{merchandise.name}}</strong>
+            </td>
+            <td class="left">N/A</td>
+            <td class="right">{{count}}</td>
+            <td class="right">${{price}}</td>
+            <td class="right">{{#if note}}{{note}}{{else}}No note left{{/if}}</td>
+            <!-- <td class="right"><a href="" class="sml-button">Return</a> -->
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3"></td>
+            <td class="right"><b>Sub-Total:</b>
+            </td>
+            <td class="right">${{price}}</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td class="right"><b>Tax:</b>
+            </td>
+            <td class="right">${{tax}}</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td class="right"><b>Delivery Fee:</b>
+            </td>
+            <td class="right">${{deliverFee}}</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td class="right"><b>Grand Total:</b>
+            </td>
+            <td class="right">${{totalPrice}}</td>
+            <td></td>
+        </tr>
+    </tfoot>
+</table>
+<br>
+<br>
+<h2 class="header-3">Order History</h2>
+<br>
+<table class="list">
+    <thead>
+        <tr>
+            <td class="left">Order Date</td>
+            <td class="left">Status</td>
+            <td class="left">Pick Up</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="left">{{orderTime}}</td>
+            <td class="left">{{status}}</td>
+            <td class="left">{{userPickTime}}</td>
+        </tr>
+    </tbody>
+</table>
+<div class="buttons">
+    <div class="right"><a href="" class="js-continue button dark-bt">Continue</a>
+    </div>
+</div>

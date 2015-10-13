@@ -1,0 +1,43 @@
+<div class="checkout-heading">Step 4: Payment Method<a style="display: none;">Modify »</a>
+</div>
+<div class="checkout-content" style="display: none;">
+    <div class="box-form" style="text-align:center;">
+        <form id="withkredit" method="post">
+            <input type="submit" class="button dark-bt" name="submit" value="Checkout with Kredit">
+        </form>
+        <form name="_xclick" class="js-paypal" action="https://www.paypal.com/au/cgi-bin/webscr" method="post" target="_BLANK">
+            <input type="hidden" name="cmd" value="_xclick">
+            <input type="hidden" name="business" value="noreply@kantwait.com">
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="hidden" name="item_name" value="KantWait Grocery">
+            <input type="hidden" name="amount" class="amount" value="{{total_price}}">
+            <input type="hidden" name="return" class="return" value="http://kantwait.com/paymentbyorder/{{orderid}}/{{userid}}/">
+            <input type="hidden" name="notify_url" class="notify_url" value="http://kantwait.com/paymentbyorder/{{orderid}}/{{userid}}/">
+            <input type="submit" class="button dark-bt" name="submit" value="Checkout with PayPal" alt="Make payments with PayPal - it's fast, free and secure!">
+        </form>
+        <form name="_xclick" class="js-paypal" action="https://www.paypal.com/au/cgi-bin/webscr" method="post" target="_BLANK">
+            <input type="hidden" name="cmd" value="_xclick">
+            <input type="hidden" name="business" value="noreply@kantwait.com">
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="hidden" name="item_name" value="KantWait Grocery">
+            <input type="hidden" name="amount" class="amount" value="{{total_price}}">
+            <input type="hidden" name="return" class="return" value="http://kantwait.com/paymentbyorder/{{orderid}}/{{userid}}/">
+            <input type="hidden" name="notify_url" class="notify_url" value="http://kantwait.com/paymentbyorder/{{orderid}}/{{userid}}/">
+            <input type="submit" class="button dark-bt" name="submit" value="Checkout with Credit Card" alt="Make payments with PayPal - it's fast, free and secure!">
+        </form>
+    </div>
+    <div class="insufficient" style="display:none;text-align: center;">
+        <h1>Insufficient Kredits. Please choose another payment method.</h1>
+    </div>
+    <div class="processing" style="display:none;text-align: center;">
+        <h1>Processing...this may takes up to 1 min, please be patient.</h1>
+    </div>
+    <div class="successful" style="display:none;text-align: center;">
+        <h1>Successful</h1>
+    </div>
+    <div class="paypal-confirm" style="display:none;text-align: center;">
+        <a type="submit" class="button js_checkout_success" name="submit">Checkout successful</a>
+        <a type="submit" class="button dark-bt" name="submit">I encountered a problem</a>
+    </div>
+</div>
+</div>

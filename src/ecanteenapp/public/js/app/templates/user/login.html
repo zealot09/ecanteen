@@ -1,0 +1,40 @@
+<div class="page-heading-wrp">
+    <h1 class="page-heading">
+        <strong>Account Login</strong>
+    </h1>
+    <div class="breadcrumb" style="visibility: visible;">
+        <span></span><a href="">Home</a>
+        <span>»</span><a href="">Account</a>
+        <span>»</span><a href="">Login</a>
+    </div>
+</div>
+<div id="noaccountwarning" class="warning" style="display:none;">Warning: No match for E-Mail address and/or password.</div>
+<div id="novalidwarning" class="warning" style="display:none;">Warning: Your account hasn't been verified, please check your mailbox for the confirmation mail. Click <a class="resendmail">Here</a> to resend the mail again. If you still have issue, please Contact Us.</div>
+<div class="login-content">
+    <div class="left box-form">
+        <h2 class="header-3">New Customer</h2>
+        <div class="content">
+            <p><b>Register Account</b>
+            </p>
+            <p>By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.</p>
+            <a href="#register" class="button dark-bt">Continue</a>
+            <input type="button" id="FBLogin" value="Login With Facebook" class="button FBbutton dark-bt">
+        </div>
+    </div>
+    <div class="right box-form">
+        <h2 class="header-3">Returning Customer</h2>
+        <form method="post" enctype="multipart/form-data">
+            <div class="content">
+                <p>I am a returning customer</p>
+                <label for="email">E-Mail Address:</label>
+
+                <input id="email" type="text" name="email" value="">
+
+                <label for="password">Password:</label>
+                <input type="password" name="password" value="">
+                <a href="#forget">Forget your password?</a>
+                <input type="submit" value="Login" class="button dark-bt">
+            </div>
+        </form>
+    </div>
+</div>

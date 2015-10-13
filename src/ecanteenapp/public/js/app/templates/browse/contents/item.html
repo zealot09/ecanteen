@@ -1,0 +1,30 @@
+<div class="prd-block2">
+    <div class="image">
+        {{#if onSale}}
+        <span class="offer-tag"></span>
+        {{/if}}
+        <a>
+            <img src="http://kantwait.com{{ image }}" title="{{ name }}" alt="{{ name }}">
+        </a>
+    </div>
+    <div class="info-wrp">
+        <div class="info">
+            <strong class="nameText"><a class="name">{{ name }}</a>
+            </strong>
+            <div class="price">
+                {{#if onSale}}
+                <span class="price-old">$ {{ price }}</span>
+                <span class="price-new">$ {{ onSalePrice }}</span>
+                {{else}}
+                <span class="price-new">$ {{ price }}</span>
+                {{/if}}
+            </div>
+            <div class="buy-option">
+                <a class="addtocart js-add" title="Add to Cart">Add to Cart</a>
+                <span class="otherbtn">
+                    <!-- <a class="prdbt wish" title="Add to Wishilist"></a> -->
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

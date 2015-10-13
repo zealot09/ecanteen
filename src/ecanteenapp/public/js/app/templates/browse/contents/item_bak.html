@@ -1,0 +1,40 @@
+<div class="prd-block prd-block3 grid-block">
+    <div class="image">
+        {{#if onSale}}
+        <span class="offer-tag"></span>
+        {{/if}}
+        <a href="#">
+            <img src="http://kantwait.com{{ image }}" title="{{name}}">
+        </a>
+    </div>
+    <div class="info-wrp">
+        <div class="info">
+            <strong class="nameText">
+                <a href="#" style="color: #000;">{{ name }} </a>
+            </strong>
+            <div class="description" style="display:none;">{{ description }}</div>
+            <span class="cart-button"><a class="cart-bt" title="Add to Cart">Add to Cart</a>
+            </span>
+            <ul>
+                <li><a href="#" class="js-more-info">More info <span>›</span></a>
+                </li>
+                <li><a class="js-wishlist">Add to Wish List <span>›</span></a>
+                </li>
+                <li class="last js-share"><a>Share this item! <span>›</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="price">
+            {{#if onSale}}
+            <span class="price-old">$ {{ price }}</span>
+            <span class="price-new">$ {{ onSalePrice }}</span>
+            {{else}}
+            <span class="price-new">$ {{ price }}</span>
+            {{/if}}
+
+            <span class="price-tax">Ex Tax:
+                <br>{{ taxRate }}
+            </span>
+        </div>
+    </div>
+</div>

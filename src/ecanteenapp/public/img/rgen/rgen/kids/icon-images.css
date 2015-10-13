@@ -1,0 +1,75 @@
+.compare,
+.wish,
+a.cart-bt,
+.cart-bt:hover,
+.prev,
+.prev:hover, 
+.next,
+.next:hover, 
+.jcarousel-prev,
+.jcarousel-prev:hover,
+.jcarousel-prev.jcarousel-prev-disabled,
+.jcarousel-prev.jcarousel-prev-disabled:hover,
+.jcarousel-next,
+.jcarousel-next:hover,
+.jcarousel-next.jcarousel-next-disabled,
+.jcarousel-next.jcarousel-next-disabled:hover,
+.store-home #slidshow-box .next,
+.store-home #slidshow-box .prev,
+#header .button-search,
+a.home-btn,
+.product-info .cart a.cart-bt,
+.footer-bt a,
+.lrg-stars,
+.sml-stars,
+.jspDragTop,
+.jspDragBottom,
+.list-bt,
+.grid-bt,
+#header #cart .cart-arrow,
+.search-close,
+.offer-tag,
+.column .special-prd .box-heading,
+.product-info .image .zoom-text b,
+.read-review .wrt-on,
+#twitter ul li,
+#footer .contact-info .ph-image, 
+#footer .contact-info .fax-image, 
+#footer .contact-info .email-image,
+.product-info .qty .qty-input,
+.read-review .wrt-off,
+.th-l .image-additional .active a {
+	background-image: url(sprites.png);
+}
+
+a.home-btn {background-position: 0 -40px;}
+
+#footer .contact-info .ph-image { background-position: 0 -945px; }
+#footer .contact-info .fax-image { background-position: -45px -945px; }
+#footer .contact-info .email-image { background-position: -90px -945px; }
+
+a.facebook-icon { background-position: 0 -1504px; }
+a.twitter-icon { background-position: 0 -1570px; }
+a.youtube-icon { background-position: 0 -1636px; }
+a.google-icon { background-position: 0 -1702px; }
+a.mailto-icon { background-position: 0 -1768px; }
+a.addthis-icon { background-position: 0 -1834px; }
+a.flickr-icon {	background-position: 0 -1959px; }
+a.pintrest-icon { background-position: 0 -2019px; }
+a.yahoo-icon { background-position: 0 -2079px; }
+a.tumblr-icon { background-position: 0 -2139px; }
+a.insta-icon { background-position: 0 -2199px; }
+a.linkedin-icon { background-position: 0 -2259px; }
+a.vimeo-icon { background-position: 0 -2319px; }
+
+a.cart-bt {	background-position: 0 -140px; }
+a.cart-bt:hover { background-position: -52px -140px; }
+.product-info .cart a.cart-bt { background-position: 0 -192px; }
+
+.prd-block1 a.cart-bt {
+	background-image: url(cartbt.png);
+}
+.prd-block1 a.cart-bt:hover {
+	background-image: url(cartbt_hover.png);
+	background-position: center center;
+}

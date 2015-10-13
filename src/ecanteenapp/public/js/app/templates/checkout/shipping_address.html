@@ -1,0 +1,97 @@
+<div class="checkout-heading">
+    <span>Step 2: Delivery Details</span><a style="display: none;">Modify »</a>
+</div>
+<div class="checkout-content" style="display: none;">
+    <div class="box-form1-wrapper guest-address">
+        <div id="warning" class="warning" style="display:none;">Please pick one of the following delivery methods.</div>
+        <div id="deliverywarning" class="warning" style="display:none;">Please confirm the delivery terms by click the checkbox.</div>
+        <div id="mobilewarning" class="warning" style="display:none;">Please provide your correct mobile number as contact information.</div>
+        <div class="left js-left">
+            <div class="box-form">
+                <h2 class="header-3" style="text-align: center;">To A Stop Near Me ($2.99)</h2>
+                <label for="zone_id">Stop:
+                    <span class="required">*</span> <a href="https://mapsengine.google.com/map/u/0/edit?mid=z2bS2mHngxgI.k16afC3_wZdM" target="_BLANK">&nbsp;&nbsp;Available Stops Lookup</a>
+                </label>
+                <span class="select">
+                    <select class="large-field select-menu" id="stop_selector">
+                        <option value="">Pick a stop</option>
+                        {{#each stops}}
+                        <option value="{{id}}">{{name}}</option>
+                        {{/each}}
+                    </select>
+                </span>
+                <div class="stop-info">
+                </div>
+                <br>
+                <label for="zone_id">Date and Time:
+                    <span class="required">*</span>
+                </label>
+                <div class="date-info">
+                </div>
+                <br>
+                <div>
+                    <p><label for="stdDeliveryTerms"><input type="checkbox" id="stdDeliveryTerms" class="stdDeliveryTerms">
+                    By checking this box, I accept the Terms below(READ Carefully) and agree to be at the selected KantWait Point at the specified time or earlier. I accept liability for any loss or damage to the goods if I miss my delivery.
+                    <p>Terms: KantWait charges $5 for redelivery of non-perishable items on the next day. And we will not hold perishable items for liability reasons. If you no longer want the groceries and leave your groceries for a refund we can only refund the non-perishable items. However, 15% of the refund plus the original shipping fee will go to KantWait as a penalty. If there is any delay, you'll be notified by us in advance. Update your phone number with us in time, always keep your phone handy and be at your Point a minute or two early when waiting for a KantWait order.</p>
+                    </label></p>
+            </div>
+        </div>
+        </div>
+        <div class="right js-right inactive">
+            <div class="box-form">
+                <form>
+                    <h2 class="header-3" style="text-align: center;">To My Door (Was $7.99 now
+                        <span style="color:#F00;">$5.99</span>)</h2>
+                    <label for="address">Address:
+                        <span class="required">*</span> <a href="http://kantwait.com/static/image/region.jpg" target="_BLANK">&nbsp;&nbsp;Delivery Area Lookup</a>
+                    </label>
+                    <input type="text" id="address" name="address" value="" class="large-field">
+                    <label> <input type="checkbox" id="setdefaultaddr"> Save as default Address </label>
+                    <label for="zipcode">Post Code:
+                        <span class="required">*</span>
+                    </label>
+                    <span class="select">
+                        <select name="zipcode" class="large-field select-menu">
+                            <option value="61801">61801 - Urbana</option>
+                            <option value="61802">61802 - Urbana</option>
+                            <option value="61820">61820 - Champaign</option>
+                            <option value="61821">61821 - Champaign</option>
+                            <option value="61874">61874 - Savoy</option>
+                        </select>
+                    </span>
+                    <br>
+                    <br>
+                    <br>
+                    <label for="zipcode">Date:
+                        <span class="required">*</span>
+                    </label>
+                    <a href="" class="button dark-bt js-offset js-today" offset='0'>Today</a>
+                    <a href="" class="button dark-bt js-offset js-tomorrow" offset='1'>Tomorrow</a>
+                    <a href="" class="button dark-bt js-offset js-thedayaftertomorrow" offset='2'>Day After Tomorrow</a>
+                    <p class="empty" hidden="true">No Date Available -- To Many Orders already, please try earlier next time</p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <label for="leaveDoor"> <input type="checkbox" name="leaveDoor" value="1"> authorize shipment release</label>
+                    <br>
+                    <br>
+                    <p>* Order cutoff at 3:00 pm each today. Will be delivered between 5:30 PM - 8:00 PM.</p>
+                    <br>
+                    <p><label for="preDeliveryTerms"><input type="checkbox" id="preDeliveryTerms" class="preDeliveryTerms"> By checking this box, I authorize KantWait to drop off my order at the door. I accept liability for any loss or damage to the package after delivery.</label></p>
+                </form>
+            </div>
+
+        </div>
+        <div class="clearfix"></div>
+        <div class="content box-form m0">
+            <p>Telephone*: (If you leave this field blank, your default mobile will be used.)</p>
+            <input type="text" id="mobile" class="mobile" value="" />
+        </div>
+    </div>
+    <div class="buttons">
+        <div class="right">
+            <input type="button" value="Continue" id="button-guest" class="js-continue button dark-bt">
+        </div>
+    </div>
+</div>
