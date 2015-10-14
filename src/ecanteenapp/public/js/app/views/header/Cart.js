@@ -27,7 +27,7 @@ define(['jquery', 'hbs!templates/header/cart', 'backbone', 'views/header/CartIte
                 try {
                     this.ui.content.fadeOut();
                 } catch (err) {
-                    
+
                 }
             },
             onMouseLeaveFade: function() {

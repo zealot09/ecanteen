@@ -11,6 +11,10 @@ var user = require('./users.js');
 
 router.post('/login', auth.login);
 
+router.get('/products', ProductApi.getProducts);
+router.get('/product/:id', ProductApi.getProduct);
+router.post('/product/', ProductApi.postProducts);
+
 router.get('/api/v1/products', ProductApi.getProducts);
 router.get('/api/v1/product/:id', ProductApi.getProduct);
 router.post('/api/v1/product/', ProductApi.postProducts);

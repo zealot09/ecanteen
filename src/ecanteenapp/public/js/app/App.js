@@ -28,6 +28,7 @@ define(['jquery', 'backbone', 'marionette', 'underscore', 'handlebars', 'backbon
         });
 
         App.mobile = isMobile();
-
+        App.baseUrl = "http://127.0.0.1:3001";
+        App.baseAuthUrl = "http://127.0.0.1:3001/api/v1";
         return App;
     });
