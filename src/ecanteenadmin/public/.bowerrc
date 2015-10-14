@@ -1,0 +1,5 @@
+{
+    "directory": "public/js/bower_components",
+    "proxy": "http://127.0.0.1:8118",
+    "peoxy":  "https://127.0.0.1:8118"
+}
