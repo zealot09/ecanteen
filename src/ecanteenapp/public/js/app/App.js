@@ -9,13 +9,13 @@ define(['jquery', 'backbone', 'marionette', 'underscore', 'handlebars', 'backbon
         //Organize Application into regions corresponding to DOM elements
         //Regions can contain views, Layouts, or subregions nested as necessary
         App.addRegions({
-            headerRegion: "#header-wrapper",
+            headerRegion: ".header-wrapper",
             mainRegion: ".home-wrapper",
             footerRegion: ".footer-wrapper",
-            modalRegion: {
-                selector: '.modals-container',
-                regionType: Backbone.Marionette.Modals
-            }
+            // modalRegion: {
+            //     selector: '.modals-container',
+            //     regionType: Backbone.Marionette.Modals
+            // }
         });
 
         App.navigate = function(route, options) {

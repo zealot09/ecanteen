@@ -1,3 +1,4 @@
+
 doctype html
 html
   head
@@ -76,7 +77,7 @@ html
               // Mobile/Tablet CSS and JavaScript files to load
               filesToLoad = {
                   // CSS file that is loaded when in development mode
-                  "dev-css": "../css/mobile.css",
+                  "dev-css": "../css/mobile/site.css",
                   // CSS file that is loaded when in production mode
                   "prod-css": "../css/mobile.min.css",
                   // Require.js configuration file that is loaded when in development mode
@@ -102,7 +103,7 @@ html
               // Desktop CSS and JavaScript files to load
               filesToLoad = {
                   // CSS file that is loaded when in development mode
-                  "dev-css": "../css/desktop.css",
+                  "dev-css": "../css/desktop/site.css",
                   // CSS file that is loaded when in production mode
                   "prod-css": "../css/desktop.min.css",
                   // Require.js configuration file that is also loaded when in development mode
@@ -131,9 +132,8 @@ html
           })
       })(navigator.userAgent || navigator.vendor || window.opera, window, document)
 
-  body(class='thm-5 bx homepage col-n')
-    div(id='container' class='menu-bx')
-      section(id='header-wrapper')
-      section(class='content-body-wrapper home-wrapper')
-      section(class='footer-wrapper')
-    div(class='modals-container')
+  body(class='thm-5 bx homepage flex-wrap col-flex')
+      header(class="midCenter flex-wrap row-flex header-wrapper")
+      section(class='page flex-wrap col-flex content-body-wrapper')
+        div(class="scroll-wrap home-wrapper")
+      div(class='footer-wrapper flex-wrap row-flex')  

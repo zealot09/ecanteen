@@ -7,7 +7,7 @@ define(['App', 'backbone', 'marionette', 'controllers/browse/LeftBar', 'controll
                     LeftBar.show();
                     Content.show();
                 });
-                
+
                 App.mainRegion.show(App.mainLayout);
             }
         });
