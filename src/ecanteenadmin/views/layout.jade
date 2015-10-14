@@ -4,17 +4,9 @@ html
     meta(charset="utf-8")
     title= title
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    link(href="./libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet")
     link(href="./ng-admin.min.css" rel="stylesheet")
     link(href="./public/js/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet")
-  body(ng-app="myApp" ng-strict-di)
+    link(rel="stylesheet" href="/public/css/site.css")
+    script(data-main="/public/js/main.js" src="/public/js/bower_components/requirejs/require.js")
+  body
     div(ui-view)
-    script(src="/libs/requirejs/require.js")
-    script(src="/ng-admin.min.js")
-    script(src="/app.js")
-    script(src="/app/user.js")
-    script(src="/app/directive/userDirective.js")
-    script(src="/app/controller/userController.js")
-    script(src="/render.js")
-    script(src="/libs/requirejs/require.js" data-main="/site.js" type="text/javascript")
-  </body>

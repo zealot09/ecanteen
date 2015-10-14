@@ -1,10 +1,8 @@
 ﻿require.config({
     paths: {
-        "jQuery": "libs/jquery/dist/jquery.min",
-        "json": "libs/json3/lib/json3.min",
-        "bootstrap": "libs/bootstrap/dist/js/bootstrap.min",
-        "angular": "libs/angular/angular.min",
-        "angularRoute": 'libs/angular-ui-router/release/angular-ui-router.min',
+        "jQuery": "public/js/bower_components/jquery/dist/jquery.min",
+        "bootstrap": "public/js/bower_components/bootstrap/dist/js/bootstrap.min",
+        "angular": "public/js/bower_components/angular/angular.min",
         "ngAdmin": "ng-admin.min",
     },
     shim: {
@@ -15,5 +13,11 @@
 });
 
 require(["jQuery", "app"], function ($, app) {
+  'use strict';
+   require('ExampleModule');
+
+   require(['domReady!'], function (document) {
+    angular.bootstrap(document, ['myApp']);
+   });
    app.init();
 });
