@@ -3,7 +3,6 @@ require(["App", "jquery", "routers/AppRouter", "controllers/MobileController", "
     function (App, $, AppRouter, AppController) {
         // Prevents all anchor click handling
         // $.mobile.linkBindingEnabled = false;
-        console.log('t')
         App.appRouter = new AppRouter({
             controller:new AppController()
         });
