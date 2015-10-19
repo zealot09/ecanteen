@@ -14,6 +14,12 @@ define(['jquery', 'hbs!templates/mobile/recommendProduct', 'backbone', 'views/ma
         onMouseLeaveFade: function() {
         },
         initialize: function() {
+          console.log(this.collection);
         },
+        itemViewOptions: function(model, index) {
+          return {
+            childIndex: index
+          }
+        }
     });
   });

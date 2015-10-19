@@ -183,3 +183,14 @@ section{
     -webkit-flex: 30;
     flex: 30;
 }
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.flex > .itemBox {
+   flex: 1 0 50%;
+   text-align: center;
+}
